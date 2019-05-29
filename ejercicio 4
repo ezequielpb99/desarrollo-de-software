@@ -1,0 +1,23 @@
+#include "pch.h"
+#include <iostream>
+#include <sstream>
+using namespace std;
+int main()
+{
+	int m = 0;
+	int i = 3;
+	int flag = 0;
+	int multiploDe5 = 5;
+	cout << "ingrese el numero" << "\n";
+	cin >> m;
+	while (flag != m) {
+			if ((i / 3) == multiploDe5) {
+				multiploDe5 += 5;
+			}
+			else {
+				cout << "multiplo de 3 pero no de 5: " << i << ;
+				flag++;
+			}
+			i += 3;
+	}
+}
