@@ -1,0 +1,36 @@
+#include "pch.h"
+#include <iostream>
+#include <sstream>
+using namespace std;
+int main()
+{
+	int numeros[10];
+	int flag = 0;
+	int mayoresACien = 0;
+	int menoresADiez = 0;
+	cout << "Por favor ingrese 50 numeros:\n";
+	for (int i = 0; i < 10; i++)
+	{
+		cin >> numeros[i];
+		if (numeros[i] <= -10)
+		{
+			menoresADiez += numeros[i];
+		}
+		if (numeros[i] >= 100)
+		{
+			mayoresACien += numeros[i];
+			flag++;
+		}
+	}
+	if (flag != 0)
+	{
+		int promedio = mayoresACien / flag;
+		cout << "El promedio es: " << promedio;
+		cout << "\nEl suma de los numeros menores a -10 es: " << menoresADiez;
+	}
+	else
+	{
+		cout << "El promedio es: 0";
+		cout << "\nEl suma de los numeros menores a -10 es: " << menoresADiez;
+	}
+}
