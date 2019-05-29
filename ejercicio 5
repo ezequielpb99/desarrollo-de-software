@@ -1,0 +1,19 @@
+#include "pch.h"
+#include <iostream>
+#include <sstream>
+using namespace std;
+void convertirFecha(int fecha)
+{
+	string fechaTexto;
+	fechaTexto = to_string(fecha);
+	cout << fechaTexto[0] << fechaTexto[1] << fechaTexto[2] << fechaTexto[3] << endl;
+	cout << fechaTexto[4] << fechaTexto[5] << endl;
+	cout << fechaTexto[6] << fechaTexto[7] << endl;
+}
+int main()
+{
+	int fecha = 0;
+	cout << "ingrese fecha en YYYYMMDD" << endl;
+	cin >> fecha;
+	convertirFecha(fecha);
+}
