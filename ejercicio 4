@@ -15,7 +15,7 @@ int main()
 				multiploDe5 += 5;
 			}
 			else {
-				cout << "multiplo de 3 pero no de 5: " << i << ;
+				cout << "multiplo de 3 pero no de 5: " << i << "\n";
 				flag++;
 			}
 			i += 3;
